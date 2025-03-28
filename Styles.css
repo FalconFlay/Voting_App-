@@ -1,0 +1,152 @@
+/* تنظیمات عمومی */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* راست‌چین برای زبان فارسی */
+}
+
+/* ساعت و تاریخ */
+#dateTime {
+    text-align: right;
+    margin: 10px 20px;
+    font-size: 20px; /* افزایش اندازه فونت */
+    font-weight: bold; /* پررنگ‌تر کردن */
+    color: black; /* تغییر رنگ به مشکی */
+}
+
+/* پیام خوش آمدگویی */
+.golden-border {
+    border: 5px solid gold; /* کادر طلایی */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(255, 215, 0, 0.2); /* پشت‌زمینه روشن و شفاف */
+}
+
+.golden-border h1 {
+    font-size: 48px; /* کوچک‌تر کردن اندازه */
+    font-weight: bolder; /* پررنگ‌تر */
+    color: black; /* تغییر رنگ به مشکی */
+}
+
+.golden-border p {
+    font-size: 28px; /* کوچک‌تر کردن اندازه */
+    font-weight: bolder; /* پررنگ‌تر */
+    color: black; /* تغییر رنگ به مشکی */
+}
+
+/* کلید شروع */
+#startButton {
+    font-size: 36px; /* افزایش اندازه فونت */
+    padding: 25px; /* افزایش اندازه دکمه */
+    border-radius: 10px; /* گوشه‌های گرد */
+    cursor: pointer;
+    background-color: #f4f4f4; /* رنگ پس‌زمینه */
+    border: 2px solid black; /* حاشیه دکمه */
+    transition: all 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #ddd; /* تغییر رنگ هنگام حرکت ماوس */
+}
+
+/* کلیدهای رأی‌گیری */
+.vote-button {
+    width: 70%;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 50px; /* شکل بیضی دکمه‌ها */
+    text-align: center;
+    cursor: pointer;
+}
+
+.vote-button:hover {
+    opacity: 0.9; /* افکت هنگام حرکت ماوس */
+}
+
+/* ثبت، مشاهده نظرات و اشتراک‌گذاری */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* فاصله بین دکمه‌ها */
+    margin: 20px 0;
+}
+
+.center-buttons button {
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px; /* اندازه کوچک‌تر دکمه‌ها */
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.center-buttons button:hover {
+    background-color: #ddd; /* تغییر رنگ هنگام حرکت ماوس */
+}
+
+/* نمودار آمار */
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* کادر نظرات */
+textarea {
+    width: 100%;
+    max-width: 500px; /* تنظیم عرض برای نمایش بهتر */
+    height: 150px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* غیرفعال کردن تغییر اندازه دستی */
+}
+
+/* لیست نظرات */
+#commentsList {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px; /* محدودیت ارتفاع */
+    overflow-y: auto; /* فعال‌سازی اسکرول در صورت نیاز */
+}
+
+#commentsList p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* آمار کلی */
+#statistics {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.stat-box {
+    border: 5px solid lightblue;
+    background-color: lightblue;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    width: 80%; /* اندازه کادر */
+    margin: 10px auto;
+    border-radius: 10px; /* گوشه‌های گرد */
+}

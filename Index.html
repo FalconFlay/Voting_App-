@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه نظر سنجی</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- نمایش ساعت و تاریخ -->
+    <div id="dateTime">
+        <h3>زمان جاری: <span id="time"></span></h3>
+        <h3>تاریخ امروز: <span id="date"></span></h3>
+    </div>
+
+    <!-- پیام خوش آمدگویی -->
+    <div id="welcomeMessage" class="golden-border">
+        <h1>هموطن عزیز</h1>
+        <p>
+            هموطن عزیز، ورود شما را به برنامه نظر سنجی برای عملکرد نظام خوش آمد می‌گوییم. 
+            به شما اطمینان می‌دهیم که امنیت این نظر دهی کاملا حفظ می‌شود و هیچ ردی از شما و نظرتون قابل ردگیری نیست.
+            همچنین به کسانی که تلاش می‌کنند وارد اطلاعات این نرم افزار بشن هشدار می‌دهیم که بعد از فردای آزاد شدن ایران در محاکم قضایی پیگرد قانونی می‌شوید. حرکت شما مصداق دزدی اطلاعات و جزو جرائم رایانه‌ای و کامپیوتری می‌باشد و جریمه سختی در انتظار شماست.
+        </p>
+        <button id="startButton">شروع</button>
+    </div>
+
+    <!-- برنامه اصلی -->
+    <div id="mainApp" style="display: none;">
+        <!-- کلیدهای رأی گیری -->
+        <h2>آیا با عملکرد و ادامه کار و حیات نظام موافقید؟</h2>
+        <button class="vote-button" id="yesButton" style="background-color: green;">آری</button>
+        <button class="vote-button" id="neutralButton" style="background-color: white;">ممتنع</button>
+        <button class="vote-button" id="noButton" style="background-color: red;">نه</button>
+
+        <!-- بخش نظرات -->
+        <h3>ثبت نظرات:</h3>
+        <textarea id="comment" placeholder="نظر خود را وارد کنید..." maxlength="50"></textarea>
+        <div class="center-buttons">
+            <button id="submitComment">ثبت نظر</button>
+            <button id="viewComments">مشاهده نظرات</button>
+            <button id="shareButton">اشتراک‌گذاری برنامه</button>
+        </div>
+        <div id="commentsList"></div>
+
+        <!-- بخش آمار و نمودار -->
+        <h3>آمار کلی:</h3>
+        <div id="statistics">
+            <p>تعداد آری: <span id="agreeCount">0</span></p>
+            <p>تعداد ممتنع: <span id="neutralCount">0</span></p>
+            <p>تعداد نه: <span id="disagreeCount">0</span></p>
+        </div>
+        <h3>نمودار رأی‌گیری:</h3>
+        <div>
+            <canvas id="voteChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
